@@ -31,7 +31,7 @@
                                     <constraint firstAttribute="width" constant="104" id="VQE-4g-ZsL"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" size="button"/>
-                                <state key="normal" title="Button1">
+                                <state key="normal" title="Button">
                                     <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -42,12 +42,54 @@
                                     <action selector="selectedCard:" destination="2" eventType="touchUpInside" id="Qgq-Xz-56e"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5EK-Nj-IZq">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="104" id="ma9-P1-Hv9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" title="So Highhhhh">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectedCard:" destination="2" eventType="touchUpInside" id="1xG-Fb-nZK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AvE-N7-ucN">
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" title="So Highhhhh">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectedCard:" destination="2" eventType="touchUpInside" id="Vvg-Ln-YUx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1y-G4-v58">
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" title="So Highhhhh">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectedCard:" destination="2" eventType="touchUpInside" id="0H7-Yg-Y1m"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d0p-hZ-uj5">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="122" id="dx3-h5-Bho"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" size="button"/>
-                                <state key="normal" title="Button2">
+                                <state key="normal" title="Button">
                                     <color key="titleColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -63,7 +105,7 @@
                                     <constraint firstAttribute="height" constant="122" id="6mg-mN-2Ib"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" size="button"/>
-                                <state key="normal" title="Button3">
+                                <state key="normal" title="Button">
                                     <color key="titleColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -77,22 +119,36 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="f1y-G4-v58" secondAttribute="bottom" constant="124" id="0g4-ZR-sLA"/>
+                            <constraint firstAttribute="trailing" secondItem="f1y-G4-v58" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="2Ly-2m-shI"/>
                             <constraint firstItem="sjd-oY-7Ax" firstAttribute="trailing" secondItem="d0p-hZ-uj5" secondAttribute="trailing" type="default" id="2xo-VT-Qa7"/>
+                            <constraint firstItem="f1y-G4-v58" firstAttribute="top" secondItem="sjd-oY-7Ax" secondAttribute="top" type="default" id="5lL-OF-p0S"/>
+                            <constraint firstItem="f1y-G4-v58" firstAttribute="leading" secondItem="AvE-N7-ucN" secondAttribute="leading" type="default" id="6YA-TS-jcT"/>
+                            <constraint firstItem="AvE-N7-ucN" firstAttribute="top" secondItem="d0p-hZ-uj5" secondAttribute="top" type="default" id="7Ma-rd-Q2I"/>
+                            <constraint firstAttribute="trailing" secondItem="AvE-N7-ucN" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="7Tv-er-5Wz"/>
                             <constraint firstItem="dgs-bB-Wkw" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="8MI-bo-SUL"/>
                             <constraint firstItem="n2Q-za-SU4" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Dr3-L1-KIP"/>
-                            <constraint firstAttribute="bottom" secondItem="sjd-oY-7Ax" secondAttribute="bottom" constant="124" id="EPR-tJ-guv"/>
                             <constraint firstItem="n2Q-za-SU4" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="GHv-hr-OFN"/>
+                            <constraint firstItem="f1y-G4-v58" firstAttribute="bottom" secondItem="sjd-oY-7Ax" secondAttribute="bottom" type="default" id="Q7L-KN-NfZ"/>
+                            <constraint firstAttribute="trailing" secondItem="5EK-Nj-IZq" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="RZg-HL-3RF"/>
+                            <constraint firstItem="AvE-N7-ucN" firstAttribute="leading" secondItem="5EK-Nj-IZq" secondAttribute="leading" type="default" id="YUz-OX-fvD"/>
                             <constraint firstAttribute="bottom" secondItem="dgs-bB-Wkw" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="eac-yM-y9W"/>
+                            <constraint firstItem="5EK-Nj-IZq" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="h9U-eQ-OlK"/>
                             <constraint firstItem="d0p-hZ-uj5" firstAttribute="top" secondItem="3" secondAttribute="top" constant="162" id="hEd-SI-AcQ"/>
                             <constraint firstItem="sjd-oY-7Ax" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="jDJ-lN-7Um"/>
+                            <constraint firstItem="5EK-Nj-IZq" firstAttribute="bottom" secondItem="n2Q-za-SU4" secondAttribute="bottom" type="default" id="kRI-FE-Nn4"/>
                             <constraint firstItem="d0p-hZ-uj5" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="o1n-gT-CvH"/>
                             <constraint firstItem="d0p-hZ-uj5" firstAttribute="trailing" secondItem="n2Q-za-SU4" secondAttribute="trailing" type="default" id="pMH-2n-hck"/>
+                            <constraint firstItem="AvE-N7-ucN" firstAttribute="bottom" secondItem="d0p-hZ-uj5" secondAttribute="bottom" type="default" id="yaT-7Y-dS0"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="button1" destination="n2Q-za-SU4" id="0H1-4M-OmX"/>
-                        <outlet property="button2" destination="d0p-hZ-uj5" id="jQO-Ze-Rvb"/>
-                        <outlet property="button3" destination="sjd-oY-7Ax" id="tdM-h8-Ilm"/>
+                        <outletCollection property="cardButtons" destination="n2Q-za-SU4" id="im8-NX-1no"/>
+                        <outletCollection property="cardButtons" destination="d0p-hZ-uj5" id="aoC-hE-dxI"/>
+                        <outletCollection property="cardButtons" destination="sjd-oY-7Ax" id="iCg-dN-GAF"/>
+                        <outletCollection property="cardButtons" destination="5EK-Nj-IZq" id="vAa-Wb-uyg"/>
+                        <outletCollection property="cardButtons" destination="AvE-N7-ucN" id="j6P-ti-Jfw"/>
+                        <outletCollection property="cardButtons" destination="f1y-G4-v58" id="rnQ-iD-m0k"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
@@ -108,9 +164,7 @@
             <relationships>
                 <relationship kind="action" name="changeButtonText:" candidateClass="UIButton"/>
                 <relationship kind="action" name="selectedCard:" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="button1" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="button2" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="button3" candidateClass="UIButton"/>
+                <relationship kind="outletCollection" name="cardButtons" candidateClass="UIButton"/>
             </relationships>
         </class>
     </classes>

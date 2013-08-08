@@ -10,9 +10,7 @@
 #import <QuartzCore/QuartzCore.h>
 
 @interface ViewController ()
-@property (weak, nonatomic) IBOutlet UIButton *button1;
-@property (weak, nonatomic) IBOutlet UIButton *button2;
-@property (weak, nonatomic) IBOutlet UIButton *button3;
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
 @end
 
 @implementation ViewController
@@ -28,27 +26,18 @@
 }
 
 - (IBAction)changeButtonText:(UIButton *)sender {
-    if (!sender.isSelected) {
-        if (!_button1.isSelected) {
-            [_button1 setTitle:@"Show1" forState:UIControlStateNormal];
-        }
-        if (!_button2.isSelected) {
-            [_button2 setTitle:@"Show2" forState:UIControlStateNormal];
-        }
-        if (!_button3.isSelected) {
-            [_button3 setTitle:@"Show3" forState:UIControlStateNormal];
-        }
-    }else{
-        if (!_button1.isSelected) {
-            [_button1 setTitle:@"Button1" forState:UIControlStateNormal];
-        }
-        if (!_button2.isSelected) {
-            [_button2 setTitle:@"Button2" forState:UIControlStateNormal];
-        }
-        if (!_button3.isSelected) {
-            [_button3 setTitle:@"Button3" forState:UIControlStateNormal];
+    
+    for (int i=0; i<_cardButtons.count; i++) {
+        UIButton *tempCard = _cardButtons[i];
+        if (!tempCard.isSelected) {
+            if ([tempCard.currentTitle isEqualToString:@"Button"]) {
+                [tempCard setTitle:@"Show" forState:UIControlStateNormal];
+            }else{
+                [tempCard setTitle:@"Button" forState:UIControlStateNormal];
+            }
         }
     }
+    
     sender.selected = !sender.isSelected;
     
 }
